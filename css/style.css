@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat', serif;
+    padding-top: 3.5rem;
+    color: #404040;
+}
+
+.jumbotron {
+    border-bottom: 3px inset #b8c4ce;
+    background-color: #d8e4ee;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Lora', serif;
+}
+
+nav {
+    border-bottom: 1px solid #b8c4ce;
+}
+
+footer {
+    text-align: center;
+    color: #a0a0a0;
+}
