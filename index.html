@@ -68,27 +68,31 @@
       </div>
     </nav>
 
-    <main role="main">
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">diversemix</h1>
-          <p>
-            This site belongs to an Open Source developer based in Cambridge, UK.
-          </p>
+    <div class="container-fluid">
+      <div class="row">
+        <main role="main">
+          <div class="jumbotron">
+            <h1 class="display-3">diversemix</h1>
+            <p>
+              This site belongs to an Open Source developer based in Cambridge, UK.
+            </p>
 
-          <p>
-            My philosophy is that life is a wonderful <b>diversemix</b>.
-            I enjoy a wonderful mix of people, in my home life and throughout my career.
-            This site is dedicated to sharing as much as I can about what I have learnt.
-          </p>
+            <p>
+              My philosophy is that life is a wonderful <b>diversemix</b>.
+              I enjoy a wonderful mix of people, in my home life and throughout my career.
+              This site is dedicated to sharing as much as I can about what I have learnt.
+            </p>
 
-          <p>
+            <p>
 
-          </p>
+            </p>
+<div id="todo">
+</div>
 
-        </div>
-      </div>
-    </main>
+          </div>
+        </main>
+      </div> <!--- end row -->
+    </div>
 
 
     <footer class="container">
@@ -99,5 +103,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Showdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.1/showdown.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#todo').load('todo.md');
+
+        setTimeout( function () {
+          var converter = new showdown.Converter();
+          var text      = '# hello, markdown!';
+          var html      = converter.makeHtml(text);
+          $('#todo').html(html);
+        }, 2000);
+      });
+
+    </script>
   </body>
 </html>
