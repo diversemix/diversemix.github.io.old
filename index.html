@@ -86,7 +86,7 @@
             <p>
 
             </p>
-<div id="todo">
+<div id="todo" style="visibility: hidden;">
 </div>
 
           </div>
@@ -109,15 +109,13 @@
       function updateTodo(text) {
         var converter = new showdown.Converter();
         var html      = converter.makeHtml(text);
-        console.log(html);
         $('#todo').html(html);
+        $('#todo').show('fast', 'linear'); 
       }
 
       $(document).ready(function () {
         $('#todo').load('todo.md', null, function(resp, status, xhr) {
           var text = $('#todo').html();
-          console.log("Text=", text);
-          console.log("resp=", resp);
           updateTodo(text);
         });
       });
