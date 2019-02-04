@@ -109,12 +109,9 @@
       $(document).ready(function () {
         $('#todo').load('todo.md');
 
-        setTimeout( function () {
-          var converter = new showdown.Converter();
-          var text      = '# hello, markdown!';
-          var html      = converter.makeHtml(text);
-          $('#todo').html(html);
-        }, 2000);
+        var converter = new showdown.Converter();
+        var html      = converter.makeHtml($('#todo').html());
+        $('#todo').html(html);
       });
 
     </script>
