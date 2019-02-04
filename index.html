@@ -106,14 +106,20 @@
     <!-- Showdown -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.1/showdown.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $('#todo').load('todo.md');
-        var text = $('#todo').html();
-        console.log(text);
+      function updateTodo(text) {
         var converter = new showdown.Converter();
         var html      = converter.makeHtml(text);
         console.log(html);
         $('#todo').html(html);
+      }
+
+      $(document).ready(function () {
+        $('#todo').load('todo.md', null, function(resp, status, xhr) {
+          var text = $('#todo').html();
+          console.log("Text=", text);
+          console.log("resp=", resp);
+          updateTodo(text);
+        });
       });
 
     </script>
