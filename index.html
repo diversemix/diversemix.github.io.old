@@ -108,9 +108,11 @@
     <script>
       $(document).ready(function () {
         $('#todo').load('todo.md');
-
+        var text = $('#todo').html();
+        console.log(text);
         var converter = new showdown.Converter();
-        var html      = converter.makeHtml($('#todo').html());
+        var html      = converter.makeHtml(text);
+        console.log(html);
         $('#todo').html(html);
       });
 
