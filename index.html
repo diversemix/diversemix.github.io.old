@@ -86,7 +86,7 @@
             <p>
 
             </p>
-<div id="todo" style="visibility: hidden;">
+<div id="todo" style="display: none;">
 </div>
 
           </div>
@@ -110,7 +110,7 @@
         var converter = new showdown.Converter();
         var html      = converter.makeHtml(text);
         $('#todo').html(html);
-        $('#todo').show('fast', 'linear'); 
+        $('#todo').show(1000, 'linear'); 
       }
 
       $(document).ready(function () {
