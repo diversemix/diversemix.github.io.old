@@ -68,32 +68,7 @@
       </div>
     </nav>
 
-    <div class="container-fluid">
-  <div class="row">
-    <main role="main">
-      <div class="jumbotron">
-        <h1 class="display-3">diversemix</h1>
-        <p>
-          This site belongs to an Open Source developer based in Cambridge, UK.
-        </p>
-
-        <p>
-          My philosophy is that life is a wonderful <b>diversemix</b>.
-          I enjoy a wonderful mix of people, in my home life and throughout my career.
-          This site is dedicated to sharing as much as I can about what I have learnt.
-        </p>
-
-        <p>
-
-        </p>
-<div id="todo" style="display: none;">
-</div>
-
-      </div>
-    </main>
-  </div> <!--- end row -->
-</div>
-
+    {page}
 
     <footer class="container">
       <p>© diversemix.com 2017-2018</p>
@@ -105,24 +80,6 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Showdown -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.1/showdown.min.js"></script>
-    
-<script>
-  function updateTodo(text) {
-    var converter = new showdown.Converter();
-    var html      = converter.makeHtml(text);
-    $('#todo').html(html);
-    $('#todo').show(300, 'linear'); 
-  }
-
-  $(document).ready(function () {
-    $('#todo').load('todo.md', null, function(resp, status, xhr) {
-      var text = $('#todo').html();
-      updateTodo(text);
-    });
-  });
-
-</script>
-
+    {page_script}
   </body>
 </html>
-

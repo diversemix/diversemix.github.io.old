@@ -1,0 +1,17 @@
+
+<script>
+  function updateTodo(text) {
+    var converter = new showdown.Converter();
+    var html      = converter.makeHtml(text);
+    $('#todo').html(html);
+    $('#todo').show(300, 'linear'); 
+  }
+
+  $(document).ready(function () {
+    $('#todo').load('todo.md', null, function(resp, status, xhr) {
+      var text = $('#todo').html();
+      updateTodo(text);
+    });
+  });
+
+</script>
