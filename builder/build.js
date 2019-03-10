@@ -11,8 +11,19 @@ const buildPage = (pageText, pageScript) => {
 }
 
 const build = (page) => {
-  const pageText = fs.readFileSync(`${__dirname}/templates/${page}.html`, 'utf8')
-  const pageScript = fs.readFileSync(`${__dirname}/templates/${page}-script.html`, 'utf8')
+  let pageText = ''
+  try {
+    pageText = fs.readFileSync(`${__dirname}/templates/${page}.html`, 'utf8')
+  } catch (e) {
+  }
+
+  let pageScript = ''
+  try {
+    pageScript = fs.readFileSync(`${__dirname}/templates/${page}-script.html`, 'utf8')
+  } catch (e) {
+  }
+
+
   return buildPage(pageText, pageScript)
 }
 
