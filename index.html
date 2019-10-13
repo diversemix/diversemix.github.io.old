@@ -29,6 +29,14 @@
       color: #0b6977;
     }
     a:link { color: #17a2b8;}
+    .text1 { text-align: center;}
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 992px) {
+      .text1 {
+         text-align: left;
+      }
+   }
+
   </style>
 </head>
 
@@ -36,7 +44,7 @@
 
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container align-items-center">
     <!-- Strap line -->
     <div class="text-dark my-2 text-center">
         <hr>
@@ -45,13 +53,13 @@
     </div>
 
     <!-- Heading Row -->
-    <div class="row align-items-center py-5 my-5">
-      <div class="col-lg-3">
+    <div class="row py-5 my-5">
+      <div class="text-center col-lg-3">
         <img src="images/diversemix.png" alt="diversemix">
       </div>
       <!-- /.col-lg-8 -->
       <div class="col-lg-9">
-        <h1 class="font-weight-light">Home for diversemix</h1>
+        <h1 class="text1 font-weight-light">Home for diversemix</h1>
         <p>
           Thanks for dropping by,
           below you'll find my the three <i class="fa fa-book"></i> <a href="https://gitbook.com">gitbooks</a>
