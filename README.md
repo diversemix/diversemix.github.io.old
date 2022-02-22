@@ -1,4 +1,4 @@
-# Welcome
+# ![diversemix](./images/diversemix-24.png) Welcome
 
 This site is:
 - ["Github Pages"](https://docs.github.com/en/pages) site and the github repo [can be found here]()
@@ -6,6 +6,24 @@ This site is:
 
 ## Contents
 
+| a | b | c |
+|---|---|---|
+| apple | cheese | egg |
+
 ## Tests
-![alt text](./images/diversemix.png)
 Testing a link [ try this ](./TEST.md)
+
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+
+```
+some random code
+```
+
+Let me tell you a bit about `this` code
+
+```
+echo Hello
+```{bash}
