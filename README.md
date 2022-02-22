@@ -1,4 +1,4 @@
-# ![diversemix](./images/diversemix-24.png) Welcome
+# Welcome
 
 This site is:
 - ["Github Pages"](https://docs.github.com/en/pages) site and the github repo [can be found here]()
@@ -27,6 +27,7 @@ Let me tell you a bit about `this` code
 ```{js}
 console.log("help");
 ```
+![diversemix](./images/diversemix-24.png) 
 
 {:.warning}
 WARNING

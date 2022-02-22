@@ -1,0 +1,12 @@
+.header {
+    background-color: #505050;
+    color: #f0f0f0;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-top: 0.5em;
+}
