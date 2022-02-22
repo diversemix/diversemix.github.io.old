@@ -24,6 +24,15 @@ some random code
 
 Let me tell you a bit about `this` code
 
+```{js}
+console.log("help");
 ```
-echo Hello
-```{bash}
+
+{:.warning}
+WARNING
+
+{:title="my title"}
+TITLE
+
+{: #myid }
+MYID
