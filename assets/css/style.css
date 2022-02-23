@@ -7,13 +7,14 @@
     margin-bottom: 0.5em;
 }
 
-p, table, code, pre {
+p, table {
     margin-top: 0.5em;
     margin-left: 1em;
 }
 
 .markdown-body code, pre {
-    background-color: #d5d5d5;
+    background-color: #e0e0f0;
+    border-left: solid #708090 2px;
 }
 
 table {
