@@ -20,6 +20,7 @@ table {
 th {
     background-color: #708090;
     color: #e0e0f0;
+    padding: 10px;
 }
 
 .markdown-body {
