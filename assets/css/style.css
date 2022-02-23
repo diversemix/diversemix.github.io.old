@@ -12,12 +12,27 @@ p, table, code, pre {
     margin-left: 1em;
 }
 
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
 th {
     background-color: #708090;
     color: #e0e0f0;
 }
 
-td {
-    border-left: solid black 1px;
-    border-right: solid black 1px;
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+    border-top-color: rgb(198, 203, 209);
+    border-top-style: solid;
+    border-top-width: 1px;
 }
+
+.container-lg {
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
