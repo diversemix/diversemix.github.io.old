@@ -7,10 +7,13 @@ This site is:
 
 ## Contents
 
-| a | b | c |
-|---|---|---|
-| apple | cheese | egg |
+| Chapter | Description |
+|---|---|
+| [Team](./team/) | description |
+| [Software](./software/) | description |
+| [Hardware](./hardware/) | description |
+| [Architecture](./architecture/) | description |
 
 -----
 
-Testing a link [ try this ](./TEST.md)
+Testing a link [ try this ](./test.md)
