@@ -11,3 +11,13 @@ p, table, code, pre {
     margin-top: 0.5em;
     margin-left: 1em;
 }
+
+th {
+    background-color: #505050;
+    color: #f0f0f0;
+}
+
+td {
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+}
