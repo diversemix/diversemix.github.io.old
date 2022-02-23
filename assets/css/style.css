@@ -20,7 +20,6 @@ table {
 th {
     background-color: #708090;
     color: #e0e0f0;
-    padding: 10px;
 }
 
 .markdown-body {
@@ -36,6 +35,11 @@ th {
     border-top-color: rgb(198, 203, 209);
     border-top-style: solid;
     border-top-width: 1px;
+}
+
+.markdown-body table th, .markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
 }
 
 .container-lg {
