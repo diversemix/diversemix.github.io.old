@@ -1,6 +1,6 @@
 .header {
-    background-color: #505050;
-    color: #f0f0f0;
+    background-color: #708090;
+    color: #e0e0f0;
     padding-top: 1em;
     padding-left: 0.5em;
     padding-bottom: 0.5em;
@@ -13,8 +13,8 @@ p, table, code, pre {
 }
 
 th {
-    background-color: #505050;
-    color: #f0f0f0;
+    background-color: #708090;
+    color: #e0e0f0;
 }
 
 td {
