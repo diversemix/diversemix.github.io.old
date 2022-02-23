@@ -14,6 +14,8 @@ p, table {
 
 .markdown-body code, pre {
     background-color: #e0e0f0;
+}
+.markdown-body pre {
     border-left: solid #708090 2px;
 }
 
