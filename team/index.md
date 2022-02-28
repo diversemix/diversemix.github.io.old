@@ -1,3 +1,4 @@
+{:.header}
 # Teams
 
 These pages are a collection of knowledge around the building, running and maintaining

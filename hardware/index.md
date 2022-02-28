@@ -1,1 +1,2 @@
-# Index
+{:.header}
+# Hardware

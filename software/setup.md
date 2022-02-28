@@ -1,3 +1,4 @@
+{:.header}
 # My Setup
 
 This is a list of how I go about setting up a new computer. I did have a script
