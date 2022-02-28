@@ -12,7 +12,7 @@
 
 This site is built;
 
-- Using ["Github Pages"](https://docs.github.com/en/pages) and the github repo [can be found here]()
+- Using ["Github Pages"](https://docs.github.com/en/pages) and the github repo [can be found here]() out of interest this uses [Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll)
 - As clean as possible so it can be maintained with as few tools as possible (in my case git+vim)
 
 ## About the Author
