@@ -16,34 +16,36 @@ NOTE: If every owning a chromebook, with [crouton](https://github.com/dnschneid/
 using [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-chromebook#1-overview)
 
 ### Essential To Start
+
 The following sections does assume you have pulled by dotfiles with:
 ```
 # Bare essentials
 sudo apt install -y \
-build-essential net-tools nodejs npm vim-athena git 
+build-essential net-tools nodejs npm vim-athena git
 
 # Generate a private key
+ssh-keygen -t ed25519 -C "your_email@example.com"
+cat cat ~/.ssh/id_ed25519.pub
+```
 
+Now you can browse to https://github.com/settings/keys and add the key in there.
+```
+# Clone dotfiles
+cd ~
+git clone git@github.com:diversemix/dotfiles.git
 ```
 
 ### Essential Apps
 
-Okay, you have a fresh install of Ubuntu now to install what I deem the essentials:
-
-
+Useful apps I like to have installed:
 ```
-
-# Other windowing
-sudo apt install -y \
-xubuntu-desktop i3 zathura xfce4
-
-
 # Useful
 sudo apt install -y \
 ack \
 conky-all \
 diodon \
 figlet \
+firefox \
 fzf \
 gimp \
 imagemagick \
@@ -67,11 +69,17 @@ w3m-img \
 youtube-dl
 ```
 
+Sometimes I like a different windowing system:
+```
+sudo apt install -y xubuntu-desktop xfce4
+sudo apt install -y i3 zathura
+```
+
 ### Aliases
 
 - Link with `ln -s ${HOME}/dotfiles/diversemix_aliases ~/.bash_aliases`
 
-(If you already have this file you can source `diversemix_aliases`at the end)
+(If you already have this file you can source `diversemix_aliases` at the end)
 
 ### Bash Environment
 
@@ -106,11 +114,15 @@ set preview_images_method  ueberzug >> ~/.config/ranger/rc.conf
 
 ### ViM Environment
 
-- Use `ln -s ${HOME}/dotfiles/diversemix.vimrc ~/.vimrc`
+Link the rc file with: `ln -s ${HOME}/dotfiles/diversemix.vimrc ~/.vimrc`
+
+Don't forget to now run `:PlugInstall` from within `vim`
+
+* TODO - installing `coc` and `coc-explorer`
 
 ### TMux Environment
 
-- Use `ln -s ${HOME}/dotfiles/diversemix.tmux.conf ~/.tmux.conf`
+Link the conf file with: `ln -s ${HOME}/dotfiles/diversemix.tmux.conf ~/.tmux.conf`
 
 ### Git Environment
 
@@ -121,7 +133,20 @@ git config --global diff.tool meld
 git config --global difftool.prompt false
 ```
 
-
 ### Dropbox
 
+Go to the [dropbox install page](https://www.dropbox.com/install) and install from the first
+link 
+[using the  deb file](https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb)
+
 ### Using font Source Code Pro
+
+Install the patched fonts by cloning repo and running the install:
+```
+git clone git@github.com:powerline/fonts.git
+cd fonts
+./install.sh
+```
+
+Now go to Terminal -> Preferences and change the font to `Source Code Pro for Powerline`
+
