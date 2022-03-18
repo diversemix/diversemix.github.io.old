@@ -1,10 +1,14 @@
 # Welcome
 
+This site has been designed to read more like a book. 
+However, the chapters are built to make it easy to read any subject you are most interested in.
+The contents can be seen below, ***Happy Reading***
+
 | Chapter | Description |
 |---|---|
-| [Teams](./team/) | description |
-| [Software](./software/) | description |
-| [Hardware](./hardware/) | description |
+| [Teams](./team/) | All about building, being in and running teams for technology companies. |
+| [Software](./software/) | This chapter is quite varied, also contains information about architecture.|
+| [Hardware](./hardware/) | Hardware is more of a hobby or side project for me, so don't go expecting any great pearls of wisdom in here! |
 
 
 ## Introduction
