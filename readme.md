@@ -17,9 +17,5 @@ This site is built;
 
 ## About the Author
 
-The auther has PhD in condensed matter and material phyics, who after a short time lecturing entered the field of software development in 1996.
-They started writing software on the ZX Spectrum in 1984 and since then have used a variety of languages over the past 30+ years.
+The auther has a PhD in condensed matter and material phyics, after a short time lecturing then entered the field of software development.
 
------
-
-Testing a link [ try this ](./test.md)
