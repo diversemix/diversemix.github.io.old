@@ -1,4 +1,3 @@
-{:.header}
 # Welcome
 
 | Chapter | Description |
