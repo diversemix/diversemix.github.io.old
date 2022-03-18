@@ -1,4 +1,3 @@
-{:.header}
 # Software
 
 | Chapter | Description |
