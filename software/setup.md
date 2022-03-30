@@ -43,6 +43,7 @@ Useful apps I like to have installed:
 # Useful
 sudo apt install -y \
 ack \
+bat \
 conky-all \
 diodon \
 figlet \
@@ -151,3 +152,21 @@ cd fonts
 
 Now go to Terminal -> Preferences and change the font to `Source Code Pro for Powerline`
 
+### Installing bat
+
+```
+  mkdir -p ~/.local/bin
+  ln -s /usr/bin/batcat ~/.local/bin/bat
+```
+
+### Setting up FZF
+
+Documentation can be [found here](https://github.com/junegunn/fzf)
+
+Setup I use in my .bashrc:
+
+```
+export FZF_CTRL_T_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,**/*.class}"'
+export FZF_CTRL_T_OPTS='--border --info=inline --preview "bat --style=numbers --color=always --line-range :500 {}"  --bind shift-up:preview-page-up,shift-down:preview-page-down'
+
+```
