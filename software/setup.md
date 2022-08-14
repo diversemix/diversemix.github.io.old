@@ -16,9 +16,28 @@ Most of my machines run the latest LTS version.
 NOTE: If every owning a chromebook, with [crouton](https://github.com/dnschneid/crouton) 
 using [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-chromebook#1-overview)
 
+
+### Immeadiately after installation
+
+1. Use the SSO prompt you are presented with and sign in to:
+
+- Ubuntu One
+- Microsoft
+- Google
+
+2. Stuff that if not done will annoy you:
+
+- Open Firefox and login to get Bookmarks
+- Open Settings and set mouse to natural scroll
+- Run `sudo apt-get install gnome-tweaks -y && gnome-tweaks`
+- Then go to "Keyboard and mouse" -> Additional Layout -> Caps Lock -> Make Caps an addtional Esc
+
+3. Visit https://blog.diversemix.com/software/setup.html and follow instructions from there
+
 ### Essential To Start
 
-The following sections does assume you have pulled by dotfiles with:
+The following sections setup git does assume you have pulled by dotfiles with:
+
 ```
 # Bare essentials
 sudo apt install -y \
@@ -33,7 +52,15 @@ Now you can browse to https://github.com/settings/keys and add the key in there.
 ```
 # Clone dotfiles
 cd ~
+git config --global user.name "diversemix"
+git config --global user.email diversemix@gmail.com
+git config --global diff.tool meld
+git config --global difftool.prompt false
+
 git clone git@github.com:diversemix/dotfiles.git
+git clone git@github.com:diversemix/diversemix.github.io.git
+cd diversemix.github.io
+vim software/setup.md
 ```
 
 ### Essential Apps
@@ -126,14 +153,6 @@ Don't forget to now run `:PlugInstall` from within `vim`
 
 Link the conf file with: `ln -s ${HOME}/dotfiles/diversemix.tmux.conf ~/.tmux.conf`
 
-### Git Environment
-
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-git config --global diff.tool meld
-git config --global difftool.prompt false
-```
 
 ### Dropbox
 
