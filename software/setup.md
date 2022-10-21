@@ -39,6 +39,9 @@ using [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-chrome
 The following sections setup git does assume you have pulled by dotfiles with:
 
 ```
+# Add user to sudoers without password
+echo "peter ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/peter
+
 # Bare essentials
 sudo apt install -y \
 build-essential net-tools nodejs npm vim-athena git
@@ -71,10 +74,8 @@ Useful apps I like to have installed:
 sudo apt install -y \
 ack \
 bat \
-conky-all \
 diodon \
 figlet \
-firefox \
 fzf \
 gimp \
 imagemagick \
@@ -98,13 +99,25 @@ w3m-img \
 youtube-dl
 ```
 
-Sometimes I like a different windowing system:
+After doing the above, the individual apps may need some setting up....
+
+- bat - 
+```
+mkdir -p ~/.local/bin
+ln -s /usr/bin/batcat ~/.local/bin/bat
+
+```
+- fzf
+
+
+### Alternative Windowing Systems
+
 ```
 sudo apt install -y xubuntu-desktop xfce4
 sudo apt install -y i3 zathura
 ```
 
-### Aliases
+### Bash Aliases
 
 - Link with `ln -s ${HOME}/dotfiles/diversemix_aliases ~/.bash_aliases`
 
@@ -143,6 +156,12 @@ set preview_images_method  ueberzug >> ~/.config/ranger/rc.conf
 
 ### ViM Environment
 
+First install `vim-plug`
+
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 Link the rc file with: `ln -s ${HOME}/dotfiles/diversemix.vimrc ~/.vimrc`
 
 Don't forget to now run `:PlugInstall` from within `vim`
@@ -188,4 +207,10 @@ Setup I use in my .bashrc:
 export FZF_CTRL_T_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,**/*.class}"'
 export FZF_CTRL_T_OPTS='--border --info=inline --preview "bat --style=numbers --color=always --line-range :500 {}"  --bind shift-up:preview-page-up,shift-down:preview-page-down'
 
+```
+
+### Webcam
+
+```
+sudo apt install guvcview
 ```

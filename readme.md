@@ -1,3 +1,9 @@
+---
+layout: page
+title: Google
+permalink: /google/
+metatags: noindex, follow
+---
 # Welcome
 
 This site has been designed to read more like a book. 
